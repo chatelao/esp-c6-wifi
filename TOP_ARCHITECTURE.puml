@@ -1,0 +1,35 @@
+@startuml
+!theme plain
+
+package "ESP32-C6 Firmware" {
+    [Network Manager] as NM
+    [Discovery Service] as DS
+    [Web Service] as WS
+}
+
+cloud "Local Network" {
+    [mDNS Client] as Client
+    [Web Browser] as Browser
+}
+
+Client -down-> DS : "Resolves 'mm.local'"
+Browser -down-> WS : "HTTP GET /"
+NM -right-> DS : "Network Ready"
+NM -left-> WS : "Network Ready"
+
+note right of NM
+  Hardcoded SSID/Password
+  Initializes Wi-Fi Stack
+end note
+
+note bottom of DS
+  mDNS Protocol
+  Registers 'mm.local'
+end note
+
+note bottom of WS
+  ESP-IDF HTTP Server
+  Serves UI/API
+end note
+
+@enduml
