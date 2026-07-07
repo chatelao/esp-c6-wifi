@@ -6,7 +6,7 @@ This document details the technical design for the ESP32-C6 Web Server PoC. It t
 ## Technical Architecture
 The system follows a modular architecture within the ESP-IDF environment, leveraging FreeRTOS for task management and event handling.
 
-![Top Architecture](./TOP_ARCHITECTURE.puml)
+![Top Architecture](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/chatelao/esp-c6-wifi/main/TOP_ARCHITECTURE.puml)
 
 ### Component Details
 
