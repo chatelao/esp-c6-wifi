@@ -1,5 +1,5 @@
 # Goal
-Build an AI web chatbot based on a private vLLM engine.
+Build a PoC with the ESP32-C6 containing a litle webserver discoverable over mDNS "mm.local". The SSID + password will be hardcoded.
 
 # Structure
 - `CONCEPT.md`: The overall structure of the product, including Business & Use Cases as well as the High-Level Architecture.
