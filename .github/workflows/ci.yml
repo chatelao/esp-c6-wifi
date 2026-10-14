@@ -16,3 +16,18 @@ jobs:
       - name: Verify repository structure
         run: |
           ls -R
+
+      - name: Setup Arduino CLI
+        uses: arduino/setup-arduino-cli@v2
+
+      - name: Install ESP32 Core & Libraries
+        run: |
+          arduino-cli config init
+          arduino-cli config set board_manager.additional_urls https://espressif.github.io/arduino-esp32/package_esp32_index.json
+          arduino-cli core update-index
+          arduino-cli core install esp32:esp32
+          arduino-cli lib install "FastLED@3.9.13"
+
+      - name: Compile IKEA Neopixel Sketch
+        run: |
+          arduino-cli compile --fqbn esp32:esp32:XIAO_ESP32C6:PartitionScheme=huge_app IKEA_Nexopixel/IKEA_Nexopixel.ino

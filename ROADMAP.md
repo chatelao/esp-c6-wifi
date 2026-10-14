@@ -29,6 +29,7 @@
 ### Phase 2: Infrastructure
 - [ ] Setup GitHub Action workflows for CI/CD 🚧
     - [x] Create basic GitHub Action workflow structure ✅
+    - [x] Integrate Arduino CLI build for IKEA Neopixel sketch into CI ✅
     - [ ] Add documentation linting to CI ⏳
     - [ ] Integrate ESP-IDF build into CI ⏳
 - [ ] Setup ESP-IDF test environment ⏳
