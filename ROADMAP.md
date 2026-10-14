@@ -4,14 +4,14 @@
 | Phase | Description | Status |
 |---|---|---|
 | Phase 1: Documentation | Defining concept, design and roadmap | ✅ |
-| Phase 2: Infrastructure | Setting up CI/CD and development environment | ⏳ |
+| Phase 2: Infrastructure | Setting up CI/CD and development environment | 🚧 |
 | Phase 3: Implementation | Core networking and web server logic | ⏳ |
 | Phase 4: Finalization | Verification and documentation polishing | ⏳ |
 
 ## Goals
 - [x] High-level concept definition ✅
 - [x] Technical design specification ✅
-- [ ] Automated CI/CD pipeline ⏳
+- [ ] Automated CI/CD pipeline 🚧
 - [ ] Functional Wi-Fi connectivity ⏳
 - [ ] mDNS "mm.local" discovery ⏳
 - [ ] Basic Web UI ⏳
@@ -27,8 +27,8 @@
 - [x] Create `README.md` ✅
 
 ### Phase 2: Infrastructure
-- [ ] Setup GitHub Action workflows for CI/CD ⏳
-    - [ ] Create basic GitHub Action workflow structure ⏳
+- [ ] Setup GitHub Action workflows for CI/CD 🚧
+    - [x] Create basic GitHub Action workflow structure ✅
     - [ ] Add documentation linting to CI ⏳
     - [ ] Integrate ESP-IDF build into CI ⏳
 - [ ] Setup ESP-IDF test environment ⏳
